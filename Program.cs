@@ -12,8 +12,22 @@ namespace ConsoleApplication1
     {
         public static void Main()
         {
-            Task1.Start();
-            Task2.Start();
+            while (true)
+            {
+                Console.WriteLine("Виконати задачу 1 чи 2?\nВихід - 0\nВведіть цифру:");
+
+                switch (double.Parse(Console.ReadLine()))
+                {
+                    case 1: Task1.Start();
+                        continue;
+                    case 2: Task2.Start();
+                        continue;
+                    case 0 :
+                        return;
+                    default: Console.WriteLine("Введіть корректне значення");
+                        continue;
+                }
+            }
         }
     }
 }
