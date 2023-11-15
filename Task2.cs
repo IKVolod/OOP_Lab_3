@@ -17,26 +17,36 @@ namespace OOP_Lab_3
         {
             string[] fileNames = Directory.GetFiles("C:\\Users\\Little Warudo\\RiderProjects\\ConsoleApplication1\\Photo");
 
-            //Regex regexExtForImage = new Regex("^((bmp)|(gif)|(tiff?)|(jpe?g)|(png))$", RegexOptions.IgnoreCase);
-            Regex regexExtForImage = new Regex("^((bmp)|(gif)|(tiff?)|(jpe?g)|(png)|(ico)|(exif)|(emf)|(wmf)|(jpg)|(tga)|(dds)|(dib))$", RegexOptions.IgnoreCase);
-            
             foreach (string file in fileNames)
             {
                 try
                 {
-                    if (regexExtForImage.IsMatch(Path.GetExtension(file)))
+                    if (IsImageFile(file))
                     {
                         Bitmap originalImage = new Bitmap(file);
 
                         originalImage.RotateFlip(RotateFlipType.RotateNoneFlipX);
-
-                        //string flippedFilePath = ;
 
                         originalImage.Save(file.Remove(file.IndexOf('.')) + "-mirrored.gif");
                         originalImage.Dispose();
                     }
                 }
                 catch {}
+            }
+        }
+        
+        static bool IsImageFile(string filePath)
+        {
+            try
+            {
+                using (var bitmap = new Bitmap(filePath))
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
             }
         }
     }
