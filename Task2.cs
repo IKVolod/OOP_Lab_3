@@ -17,6 +17,8 @@ namespace OOP_Lab_3
         {
             string[] fileNames = Directory.GetFiles("C:\\Users\\Little Warudo\\RiderProjects\\ConsoleApplication1\\Photo");
 
+            Regex regexExtForImage = new Regex("^((.bmp)|(.gif)|(.tiff?)|(.jpe?g)|(.png)|(.ico)|(.exif)|(.emf)|(.wmf)|(.jpg)|(.tga)|(.dds)|(.dib))$", RegexOptions.IgnoreCase);
+            
             foreach (string file in fileNames)
             {
                 try
@@ -27,7 +29,13 @@ namespace OOP_Lab_3
                         originalImage.Save(file.Remove(file.IndexOf('.')) + "-mirrored.gif");
                     }
                 }
-                catch {}
+                catch
+                {
+                    if (regexExtForImage.IsMatch(Path.GetExtension(file)))
+                    {
+                        MessageBox.Show($"Something wrong with this file: {file.Substring(file.LastIndexOf('\\') + 1)}");
+                    }
+                }
             }
         }
     }
