@@ -21,32 +21,13 @@ namespace OOP_Lab_3
             {
                 try
                 {
-                    if (IsImageFile(file))
+                    using (Bitmap originalImage = new Bitmap(file))
                     {
-                        Bitmap originalImage = new Bitmap(file);
-
                         originalImage.RotateFlip(RotateFlipType.RotateNoneFlipX);
-
                         originalImage.Save(file.Remove(file.IndexOf('.')) + "-mirrored.gif");
-                        originalImage.Dispose();
                     }
                 }
                 catch {}
-            }
-        }
-        
-        static bool IsImageFile(string filePath)
-        {
-            try
-            {
-                using (var bitmap = new Bitmap(filePath))
-                {
-                    return true;
-                }
-            }
-            catch
-            {
-                return false;
             }
         }
     }
