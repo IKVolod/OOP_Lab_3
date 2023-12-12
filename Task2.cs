@@ -31,6 +31,7 @@ namespace OOP_Lab_3
                 }
                 catch
                 {
+                    Console.WriteLine($"catch: {file}");
                     if (regexExtForImage.IsMatch(Path.GetExtension(file)))
                     {
                         MessageBox.Show($"Something wrong with this file: {file.Substring(file.LastIndexOf('\\') + 1)}");

@@ -34,7 +34,11 @@ namespace OOP_Lab_3
                             int num2 = int.Parse(reader.ReadLine());
                             try
                             {
-                                int multiply = num1 * num2;
+                                int multiply;
+                                checked
+                                {
+                                    multiply = num1 * num2;
+                                }
                                 Console.WriteLine($"Добуток чисел у файлi {i}{j}.txt: {multiply}");
                                 sum += multiply;
                                 counter += 1;
@@ -134,9 +138,7 @@ namespace OOP_Lab_3
                     {
                         WriteElements(list, writer);
                     }
-                    catch
-                    {
-                    }
+                    catch {}
                 }
             }
             catch (FileNotFoundException)
@@ -153,13 +155,13 @@ namespace OOP_Lab_3
             }
         }
 
-        static void Print(List<string> list)
+        /*static void Print(List<string> list)
         {
             foreach (var item in list)
             {
                 Console.WriteLine(item);
             }
-        }
+        }*/
 
         static void RemoveAllNulles(List<string> list)
         {

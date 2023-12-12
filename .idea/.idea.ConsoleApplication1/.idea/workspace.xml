@@ -7,13 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="109ecd29-197f-4880-b606-ce5c1ff36b04" name="Changes" comment="k3">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ConsoleApplication1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ConsoleApplication1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Task2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ConsoleApplication1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ConsoleApplication1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/ConsoleApplication1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/ConsoleApplication1.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ConsoleApplication1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ConsoleApplication1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/ConsoleApplication1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/ConsoleApplication1.pdb" afterDir="false" />
+    <list default="true" id="109ecd29-197f-4880-b606-ce5c1ff36b04" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Task1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Task1.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700080647320</updated>
-      <workItem from="1700080649778" duration="10305000" />
+      <workItem from="1700080649778" duration="11341000" />
     </task>
     <task id="LOCAL-00001" summary="k2">
       <option name="closed" value="true" />
@@ -113,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700093287969</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="k4">
+      <option name="closed" value="true" />
+      <created>1700094901478</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700094901478</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +127,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="k2" />
     <MESSAGE value="k3" />
-    <option name="LAST_COMMIT_MESSAGE" value="k3" />
+    <MESSAGE value="k4" />
+    <option name="LAST_COMMIT_MESSAGE" value="k4" />
   </component>
 </project>
